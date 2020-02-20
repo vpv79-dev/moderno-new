@@ -3,7 +3,9 @@
 @import 'fonts';
 
 // Header Start 
-
+.header{
+    background-color: #fff;
+}
 .header__top-inner{
     display: flex;
     justify-content: space-between;
@@ -102,6 +104,7 @@
     }
 }
 .basket{
+    margin-right: 20px;
     span{
         background-color: $green;
     }
@@ -116,7 +119,6 @@
     }
 }
 .user{
-    margin-left: 20px;
     margin-right: 25px;
     padding-right: 20px;
     position: relative;
@@ -178,6 +180,7 @@
     overflow: hidden;
     border-top: 1px solid #e0e0e0;
     transition:  all .3s;
+    z-index: 1;
 }
 .user__box,
 .bassket__box,
@@ -295,6 +298,10 @@
 }
 .icons-color::before{
  color: $tomate;
+}
+.header__btn-menu,
+.menu__btn{
+    display: none;
 }
 // Header End 
 
@@ -1049,9 +1056,6 @@ top: 19px;
     margin-bottom: 30px;
     flex-wrap: wrap;
 }
-.pagination{
-
-}
 .pagination__list{
     li{
         display: inline-block;
@@ -1156,3 +1160,6 @@ top: 19px;
 
 
 // Product-Page End
+
+
+@import 'media';
