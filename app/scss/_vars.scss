@@ -7,6 +7,10 @@ $tomate: #ef6c00;
 $yellow: #fcb322;
 
 
+@mixin f300 {
+    font-family: 'Roboto-Regular', sans-serif;
+    font-weight: 300;
+}
 @mixin f500 {
     font-family: 'Roboto-Regular', sans-serif;
     font-weight: 500;
