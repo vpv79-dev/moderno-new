@@ -1800,6 +1800,43 @@ padding: 35px 40px 15px;
 }
 // Contact End
   
+// Settings Start
+.product-one__tabs.settings__tabs{
+    display: flex;
+    .tab{
+        border: none;
+    }
+    .tabs{
+        max-width: 270px;
+        margin-right: 30px;
+        border: 1px solid #dedede;
+        border-bottom: none;
+        text-align: left;
+        display: block;
+        width: 100%;
+        span{
+            display: block;
+            background-color: #fff;
+            border-bottom: 1px solid #dedede;
+            padding: 17px 17px 17px 50px;
+            &.active{
+                border-bottom: 2px solid $green;
+                &::before{
+                    color: $green;
+                } 
+            }
+            &::before{
+                left: 24px;
+                color: #444;
+            }
+        }
+    }
+    .tab_content{
+        width: 100%;
+    }
+}
+
+// Settings End
 
 
 @import 'media';
