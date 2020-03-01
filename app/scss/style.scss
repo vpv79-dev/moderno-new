@@ -2213,4 +2213,121 @@ color: $bg;
 }
 // Upload End
 
+// Withdrawals Start
+.withdrawals__inner{
+display: flex;
+justify-content: space-between;
+margin-bottom: 145px;
+
+} 
+.withdrawals__col{
+    background-color: #fff;
+    max-width: 570px;
+    width: 100%;
+    border: 1px solid #dedede;
+    height: 100%;
+}
+
+.withdrawals__title{
+    font-size: 24px;
+    color: $bg;
+    @include f500;
+    border-bottom: 1px solid #dedede;
+    width: 100%;
+    line-height: 60px;
+    padding-left: 30px;
+}
+.withdrawals__content{
+    padding: 35px 40px 40px;
+    form{
+        button{
+            color: #fff;
+            background-color: $green;
+            font-size: 16px;
+            @include f700;
+            padding: 20px 30px;
+            border: none;
+        }
+    }
+}
+.withdrawals__form-line{
+    span{
+        color: $green;
+    }
+    label{
+        display: block;
+        margin-bottom: 25px;
+    }
+    .jq-selectbox{
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+    }
+    input{
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+        height: 40px;
+        background-color: #f9f9f9;
+        padding-left: 20px;
+        border: 1px solid #dedede;
+    }
+    .jq-selectbox__select {
+        height: 40px;
+        // padding: 15px 20px;
+        border: 1px solid #dedede;
+        border-bottom-color: #dedede;
+        border-radius: 0;
+        background: #f9f9f9;
+        box-shadow: none;
+        font-family: 'Roboto-Regular', sans-serif;
+        color: #707070;
+        text-shadow: none;
+    }
+    .jq-selectbox__trigger {
+        top: 4px;
+        border-left: none;
+    }
+    .jq-selectbox__select-text {
+        text-overflow: ellipsis;
+        font-size: 15px;
+        line-height: 40px;
+        margin-left: 20px;
+    }
+}
+.withdrawals__content-items{
+padding-bottom: 35px;
+}
+.withdrawals__content-item{
+    &:nth-child(odd){
+        background-color: #f9f9f9;
+    }
+display: flex;
+height: 42px;
+align-items: center;
+font-size: 13px;
+color: #444;
+}
+.withdrawals__content-date{
+    @include f500;
+width: 154px;
+padding-left: 20px;
+}
+.withdrawals__content-email{
+    @include f500;
+width: 180px;
+}
+.withdrawals__content-price{
+    @include f700;
+width: 70px;
+}
+.withdrawals__content-status{
+width: 88px;
+@include f700;
+    &.withdrawals__content-paid{
+        color: $green;
+    }
+}
+// Withdrawals End
+
 @import 'media';
