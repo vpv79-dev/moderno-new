@@ -1,4 +1,18 @@
+@media(max-width: 1200px){
+    .contact__form-row{
+        flex-wrap: wrap;
+    }
+    .withdrawals__inner{
+        flex-wrap: wrap;
+    }
+    .withdrawals__col{
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
 @media(max-width: 1150px){
+ 
     .footer__inner{
         flex-wrap: wrap;
     }
@@ -10,7 +24,32 @@
         display: none;
     }
 }
+@media(max-width: 1000px){
+    .product-one__tabs.settings__tabs{
+        display: block;
+        .tabs{
+          display: flex;
+          min-width: 20%;  
+          max-width: none;
+          margin-bottom: 10px;
+          span{
+            border-left: 1px solid #dedede;
+           } 
+           span:first-child{
+               border-left: none;
+           }
+        } 
+            
+    }
+
+}
 @media(max-width: 900px){
+    
+    .page-404__404{
+        text-align: left;
+        margin-left: 80px;
+        font-size: 200px;
+    }
     .footer__col-social{
         min-width: 100%;
         margin-top: 30px;
@@ -20,6 +59,36 @@
     }
 }
 @media(max-width: 840px){
+    .profile__aside{
+        margin: 0 auto;
+    }
+    .profile__inner{
+        display: block;
+    }
+    .product-one__tabs.settings__tabs .tabs{
+        flex-wrap: wrap;
+    }
+    .page-box__content{
+        padding: 15px 15px 20px;
+    }
+    .upload-line{
+        display: block;
+        label{
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+    }
+    .upload__inner-title{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .upload__inner-content{
+        padding-left: 10px;
+        padding-right: 10px;
+        button{
+            margin-left: 0;
+        }
+    }
     .menu__list{
         display: none;
         background-color: $bg;
@@ -57,7 +126,54 @@
         }
     }
 }
+@media(max-width: 730px){
+    .contact__box{
+        flex-wrap: wrap;
+    }
+    .contact__form-row{
+        input{
+            width: 100%;
+        }
+    }
+    .page-404__404{
+        text-align: left;
+        margin-left: 100px;
+        font-size: 150px;
+    }
+}
+@media(max-width: 650px){
+    .profile__items{
+        display: block;
+        // border-bottom: none;
+    }
+    .profile__item{
+        width: 100%;
+        border-bottom: 1px solid #dedede;
+    }
+    .profile__item:last-child{
+        border-bottom: none;
+    }
+    .product-one__tabs.settings__tabs{
+        .settings__line{
+            display: block;
+        }
+        .tabs{         
+           display: block;
+           width: 100%;
+        } 
+            
+    }
+}
 @media(max-width: 640px){
+    .container{
+        padding: 0px 8px;
+    }
+    .page-404__404{
+      &::after {
+          display: none;
+          margin-left: 0;
+      } 
+    }
     .notification__box,
     .massage__box{
         display: none;
@@ -67,6 +183,11 @@
     }
 }
 @media(max-width: 570px){
+    .page-404__404 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
     .footer__col{
         min-width: 100%;
         margin-left: 30px;
@@ -75,6 +196,13 @@
     }
 }
 @media(max-width: 520px){
+    .withdrawals__content-item{
+        min-width: 490px;
+    }
+    .withdrawals__content{
+        padding: 35px 10px 10px;
+        overflow-x: scroll;
+    }
     .menu__list{
         top: 70px;
     }
@@ -131,6 +259,9 @@
    
 }
 @media(max-width: 495px){
+    .contact__inner{
+        padding: 15px 20px 10px;
+    }
     .user__info{
         display: none;
     }
